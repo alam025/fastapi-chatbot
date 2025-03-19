@@ -12,7 +12,7 @@ def home():
     return {"message": "Welcome to my FastAPI chatbot!"}
 
 # Initialize chatbot
-chatbot = ChatOllama(model='llama2')
+chatbot = ChatOllama(model='mistral')
 memory = ConversationBufferMemory()
 conversation = ConversationChain(
     llm=chatbot,
